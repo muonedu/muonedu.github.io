@@ -8,7 +8,7 @@
     ></v-progress-linear>
     <div v-show="content">
       <background></background>
-      <ongoing></ongoing>
+      <!-- <ongoing></ongoing> -->
       <category></category>
       <meet></meet>
       <foot/>
@@ -22,7 +22,7 @@ import Background from '@/components/Homepage/background.vue'
 import Navbar from '@/components/Homepage/navbar.vue'
 import Category from '@/components/Homepage/sectionResearchCategory.vue'
 // import Profile from '@/components/Homepage/profile.vue'
-import Ongoing from '@/components/Homepage/sectionOngoingResearch.vue'
+// import Ongoing from '@/components/Homepage/sectionOngoingResearch.vue'
 import Foot from '@/components/Homepage/footer.vue'
 import Meet from '@/components/Homepage/meetSupporter.vue'
 
@@ -32,7 +32,7 @@ export default {
     Navbar,
     Background,
     Category,
-    Ongoing,
+    // Ongoing,
     Meet,
     Foot
   },
