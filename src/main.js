@@ -8,7 +8,7 @@ import vuetify from './plugins/vuetify'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'font-awesome/css/font-awesome.min.css'
 
-Vue.use(Buefy)
+// Vue.use(Buefy)
 
 Vue.config.productionTip = false
 

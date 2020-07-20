@@ -1,18 +1,20 @@
 <template>
-  <div>
-    <div class="header">      
-      <div class="column">
-        <div class="column is-three-fifths content">
-          <h1>Muon Edukasi !</h1> 
-          <h1 style="font-size:30px;">Train your Mind by Coding</h1>
-          <p>Muon adalah sebuah lembaga pelatihan di bidang teknologi dan informasi yang bertujuan untuk meningkatkan kreativitas di bidang Teknologi Informasi dan mengembangkan Ekosistem Teknologi.</p>
-          <h2>Industri Oriented.</h2> <p> Muonedu! mengajak siapapun untuk belajar bersama melalui training dan Event (Python, Microservices, Flask, Django, VueJS,  Docker, dan lainnya) untuk para pelajar, developer, maupun instansi/perusahaan. </p>
-          <!-- <h2>Photon has been a high insight in implementation in the entire world.</h2> -->
-          <b-button @click="student">I am Student</b-button> <b-button @click="corporate">I am a Company</b-button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <v-container fluid class="header">
+    <v-row>
+        <v-col md="6" lg="6" sm="12" cols="12" class="content">
+            <h1>Muon Edukasi !</h1> 
+            <h1 style="font-size:30px;">Train your Mind by Coding</h1>
+            <p>Muon adalah sebuah lembaga pelatihan di bidang teknologi dan informasi yang bertujuan untuk meningkatkan kreativitas di bidang Teknologi Informasi dan mengembangkan Ekosistem Teknologi.</p>
+            <h2>Industri Oriented.</h2> <p> Muonedu! mengajak siapapun untuk belajar bersama melalui training dan Event (Python, Microservices, Flask, Django, VueJS,  Docker, dan lainnya) untuk para pelajar, developer, maupun instansi/perusahaan. </p>
+            <v-btn @click="student">I am Student</v-btn>
+            <v-btn @click="corporate">I am Student</v-btn>
+            
+        </v-col>
+        <v-col md="6" lg="6" sm="12" cols="12">
+
+        </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
