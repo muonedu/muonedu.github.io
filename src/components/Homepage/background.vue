@@ -1,18 +1,16 @@
 <template>
   <v-container fluid class="header">
-    <v-row>
-        <v-col md="6" lg="6" sm="12" cols="12" class="content">
-            <h1>Muon Edukasi !</h1> 
-            <h1 style="font-size:30px;">Train your Mind by Coding</h1>
-            <p>Muon adalah sebuah lembaga pelatihan di bidang teknologi dan informasi yang bertujuan untuk meningkatkan kreativitas di bidang Teknologi Informasi dan mengembangkan Ekosistem Teknologi.</p>
-            <h2>Industri Oriented.</h2> <p> Muonedu! mengajak siapapun untuk belajar bersama melalui training dan Event (Python, Microservices, Flask, Django, VueJS,  Docker, dan lainnya) untuk para pelajar, developer, maupun instansi/perusahaan. </p>
-            <v-btn @click="student">I am Student</v-btn>
-            <v-btn @click="corporate">I am Student</v-btn>
+    <v-row class="mt-12 mb-12">
+        <v-col md="6" lg="6" sm="12" class="content ml-6    ">
+            <h1>Muon Lab</h1> 
+            <h1 style="font-size:30px;">Melatih daya pikir <i> dengan Computational Thinking</i></h1>
+            <p>Muon adalah sebuah wadah di bidang teknologi dan informasi yang bertujuan untuk meningkatkan kreativitas di bidang Teknologi Informasi dan mengembangkan Ekosistem Teknologi.</p>
+            <h2>Industri Oriented.</h2> <p> Muon mengajak siapapun untuk belajar bersama melalui training, development, partnership, Event dan consultant bahkan research untuk para pelajar, developer, maupun instansi/perusahaan. </p>
+            <v-btn  class="primary" @click="student">Siswa</v-btn>
+            <v-btn class="ml-3 primary" @click="corporate">Korporasi</v-btn>
             
         </v-col>
-        <v-col md="6" lg="6" sm="12" cols="12">
 
-        </v-col>
     </v-row>
   </v-container>
 </template>
@@ -46,25 +44,23 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    height: 900px;
-  }
-  .content {
-    margin: 10% 0 0 5%;
-    color: white;
   }
 
   .content h1 {
     color: white;
     font-size: 40px;
+    font-family:Courier New;
   }
   .content p {
     color: white;
     font-size: 20px;
     font-style: oblique;
+    font-family:Courier New;
   }
   .content h2 {
     color: white;
     font-size: 30px;
+    font-family:Courier New;
   }
   .button{
     margin-top: 20px;

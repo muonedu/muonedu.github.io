@@ -25,17 +25,6 @@
 			    <hr class="mx-12" style="background:black">
 			    <h2>Full Stack Web Developer</h2>
 		    </v-col>
-		    <br>
-		    <v-col sm="3" class="text-center mb-12">
-			    <v-avatar width="250" height="250">
-			      <img
-			        src="../../assets/image/Ira.jpg"
-			        alt="tobing">
-			    </v-avatar>
-			    <h3 class="text-center mt-12">Humaira Shaufia S.Si</h3>
-			    <hr class="mx-12" style="background:black">
-			    <h2>Marketing and Business Consultant</h2>
-		    </v-col>
 		</v-row>
 	</v-container>
 	</div>	

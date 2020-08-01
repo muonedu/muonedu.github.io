@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <navbar/>
+  <div id="scrolling-techniques-7">
+    <navbar></navbar>
     <v-progress-linear
       :active="loading"
       :indeterminate="loading"
       color="deep-purple accent-4"
     ></v-progress-linear>
+    <br>
+    <br>
     <div v-show="content">
       <background></background>
       <!-- <service></service> -->
