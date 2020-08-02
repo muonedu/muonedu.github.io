@@ -7,15 +7,15 @@
         color="deep-purple accent-4"
       ></v-progress-linear>
     <div class="student" v-show="content">
-      <div class="columns" style="margin: 0 20% 15px 20%">
+      <div class="columns mt-12" style="margin: 0 20% 15px 20%">
         <div class="column" style="padding:5% 0 0 0;">
-          November bulannya belajar !!
+          Mari investasikan waktu anda untuk belajar !!
           <br>
           <br>
           Ada beberapa Pilihan Program yang bisa kamu ikuti. kamu juga bisa memilih metode pelatihan secara intensif, kelompok bahkan private.
           <br>
           <br>
-          Jangan menaruh harapan sama doi yang gapeka sama kode kamu, mulai sekarang taruh harapan yang cerah dengan belajar koding di Muonedu! Yuk, daftar sekarang juga!
+          Jangan menaruh harapan sama doi yang gapeka sama kode kamu, mulai sekarang taruh harapan yang cerah dengan belajar koding di Muonlab! Yuk, daftar sekarang juga!
           <br>
           <br>
           <br>
@@ -30,18 +30,21 @@
       </div>
     </div>
     <price v-show="content"></price>
+    <foot v-show="content" />
   </div>
 </template>
 
 <script>
   import Navbar from '@/components/Homepage/navbar.vue'
   import Price from '@/views/Price/price.vue'
+  import Foot from '@/components/Homepage/footer.vue'
 
   export default {
     name: 'student',
     components: {
       Navbar,
-      Price
+      Price,
+      Foot
     },
     data () {
       return {

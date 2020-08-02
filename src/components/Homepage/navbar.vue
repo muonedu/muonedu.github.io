@@ -12,7 +12,9 @@
         <v-spacer></v-spacer>
 
         <v-btn v-for=" (btn, i) in btnNav" :key="i"  
-            class="mr-4 d-none d-lg-flex d-md-flex d-xl-none" :class="btn.color" :rounded="btn.rounded">
+            class="mr-4 d-none d-lg-flex d-md-flex d-xl-none" :class="btn.color"
+            :rounded="btn.rounded"
+            @click="goTo(btn.to)">
             <v-icon>{{btn.mdi}}</v-icon> &nbsp; &nbsp;{{btn.name}}
         </v-btn>
         
@@ -112,25 +114,30 @@ export default {
         btnNav: [
             {
                 mdi: "mdi-book-open-page-variant",
-                name: "Training"
+                name: "Training",
+                to: "training"
             },
             {
                 mdi: "mdi-cast-connected",
-                name: "Development"
+                name: "Development",
+                to: "development"
             },
             {
                 mdi: "mdi-account-cowboy-hat",
-                name: "Partnership"
+                name: "Partnership",
+                to: "partnership"
             },
             {
                 mdi: "mdi-feature-search",
-                name: "Research"
+                name: "Research",
+                to: "research"
             },
             {
                 mdi: "mdi-gesture-two-double-tap",
                 name: "Let's talk",
                 color: "red accent-4",
-                rounded: true
+                rounded: true,
+                to: "talk"
             }
         ]
     }
@@ -139,21 +146,36 @@ export default {
 
   },
   methods: {
-    home () {
-      this.$router.push({path:'/'})
+    goTo (goTo) {
+        if (goTo == "home") {
+            this.$router.push({path:'/'})
+        }
+        if (goTo == "training") {
+            this.$router.push({path:'/training'})
+        }
+        if (goTo == "development") {
+            this.$router.push({path:'/development'})
+        }
+        if (goTo == "partnership") {
+            this.$router.push({path:'/partnership'})
+        }
+        if (goTo == "talk") {
+            this.$router.push({path:'/talk'})
+        }
     },
-    corporate () {
-      this.$router.push({name:'corporate'})
 
-    },
-    contact () {
-      this.$router.push({name:'contact'})
+    // corporate () {
+    //   this.$router.push({name:'corporate'})
+
+    // },
+    // training () {
+    //   this.$router.push({name:'training'})
       
-    },
-    event () {
-      this.$router.push({name:'event'})
+    // },
+    // event () {
+    //   this.$router.push({name:'event'})
       
-    }
+    // }
 
   }
     

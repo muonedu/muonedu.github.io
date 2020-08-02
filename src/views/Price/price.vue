@@ -1,41 +1,43 @@
 <template>
-	<div>
-		<h1>Available Class</h1>
-		<div class="columns">
-			<div class="column" style="text-align: center" v-for='content in data' :key="content.id">
-				<div class="card">
-					<div class="card-content">
-						<h2>{{content.title}}</h2>
-						<hr>
-						<h2 style="color:blue;" v-if="content.discount"> <strong>Rp </strong>{{content.discount}}</h2>
-						<h5 v-if="content.discount"> <b>Rp</b>{{content.price}}</h5>
-						<h1 else style="color:blue;"> {{content.soon}}</h1>
-						<hr>
-						<div class="content">
-							<h4>{{content.desc_1}}</h4>
-							<hr>
-							<h4>{{content.desc_2}}</h4>
-							<hr>
-							<h4>{{content.desc_3}}</h4>
-							<hr>
-							<h4>{{content.desc_4}}</h4>
-						</div>
-					</div>
-					<v-btn style='margin:0 0 20px 0;'> <a style="font-weight:500;color:blue" :href="content.link" title="">Daftar Sekarang</a></v-btn>
-				</div>   
-			</div>
-		</div>
-		<hr>
-		<foot/>
-	</div>
+	<v-container fluid>
+        <v-row justify="center">
+            <v-col class="text-center col-lg-6"> 
+                <h1>Daftar Training</h1>
+                <p>
+                	Dalam Training ini, kamu akan dilatih hingga bisa menguasai beberapa framework. selain itu, kamu juga akan belajar disertai dengan project sehingga kamu bisa merasakan secara langsung.
+                </p>
+
+            </v-col>
+        </v-row>
+        <br>
+        <v-row justify="center" class="service">
+            <v-col class=" col-lg-3" 
+                md="6" sm="12" cols="12" 
+                v-for="content in data" 
+                :key="content.id">
+                <v-card outlined flat="true">
+                    <v-card-title class="title-service mb-2">
+                        <v-icon style="font-size:60px;color:#1565C0">{{content.mdi}}</v-icon>{{content.title}}
+                    </v-card-title>
+                    <v-card-text class="text">{{content.desc_1}}</v-card-text>
+                    <v-card-actions>
+                        <v-btn text rounded=true style="color:#F44336"> <v-icon>mdi-eye-settings</v-icon> &nbsp;Lihat</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+            
+        </v-row>
+       
+    </v-container>
+
 </template>
 
 <script>
-	import Foot from '@/components/Homepage/footer.vue'
+	
 	export default {
 		name: 'Price',
 		components: {
-			Foot
+
 		},
 		data () {
 			return {
@@ -71,6 +73,83 @@
 						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
 						desc_4: 'Computer Vision and Machine Learning',
 						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'IOT',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Arduino',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Raspberry Pi',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Web Development',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Dekstop Application',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Simulation',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
+					},
+					{
+						title: 'Machine Learning',
+						soon: 'Coming Soon',
+						// price: '3.000.000',
+						// discount: '1.000.000',
+						desc_1: 'Durasi selama 7 minggu',
+						desc_2: 'Dilakukan secara full onsite',
+						desc_3: 'Dibimbing oleh praktisi Python, Machine Learning dan Computer Vision Expert',
+						desc_4: 'Computer Vision and Machine Learning',
+						// link: 'https://forms.gle/X3FCGnvjoWKjEbMaA'
 					}
 				]
 			}
@@ -79,24 +158,23 @@
 </script>
 
 <style scoped>
-	h1 {
-		text-align: center;
-		font-size: 50px;
-		font-weight: 400;
-	}
-	.columns {
-		margin: 20px 10% 20px 10%;
-	}
-	.content {
-		font-size: 14px;
-
-	}
-	.card-content h2 {
-		font-size:30px;
-	}
-	.card-content h5 {
-		text-decoration: line-through;
-		padding-left: 20%;
-	}
+	h1{
+      letter-spacing: 15px;
+      font-weight: bold;
+      font-family:Courier New;
+      font-size: 40px;
+    }
+    .title-service {
+        letter-spacing: 1px;
+        font-family:Courier New;
+        font-size: 27px;
+    }
+    p, .text{
+      letter-spacing: 2px;
+      font-family:Courier New;
+    }
+    .service {
+        font-size:30px;
+    }
 	
 </style>
