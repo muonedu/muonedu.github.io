@@ -6,8 +6,6 @@
             <h1 style="font-size:30px;">Melatih daya pikir <i> dengan Computational Thinking</i></h1>
             <p>Muon adalah sebuah wadah di bidang teknologi dan informasi yang bertujuan untuk meningkatkan kreativitas di bidang Teknologi Informasi dan mengembangkan Ekosistem Teknologi.</p>
             <h2>Industri Oriented.</h2> <p> Muon mengajak siapapun untuk belajar bersama melalui training, development, partnership, Event dan consultant bahkan research untuk para pelajar, developer, maupun instansi/perusahaan. </p>
-            <v-btn  class="primary" @click="student">Siswa</v-btn>
-            <v-btn class="ml-3 primary" @click="corporate">Korporasi</v-btn>
             
         </v-col>
 

@@ -12,7 +12,7 @@
         <v-spacer></v-spacer>
 
         <v-btn v-for=" (btn, i) in btnNav" :key="i"  
-            class="mr-4 d-none d-lg-flex d-md-flex d-xl-none">
+            class="mr-4 d-none d-lg-flex d-md-flex d-xl-none" :class="btn.color" :rounded="btn.rounded">
             <v-icon>{{btn.mdi}}</v-icon> &nbsp; &nbsp;{{btn.name}}
         </v-btn>
         
@@ -125,6 +125,12 @@ export default {
             {
                 mdi: "mdi-feature-search",
                 name: "Research"
+            },
+            {
+                mdi: "mdi-gesture-two-double-tap",
+                name: "Let's talk",
+                color: "red accent-4",
+                rounded: true
             }
         ]
     }
